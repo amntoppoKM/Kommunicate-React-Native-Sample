@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resources>
+  <color name="splashscreen_background">#FFFFFF</color>
+  <color name="km_back_button_colour">#301739</color>
+  <color name="km_faq_button_background_color">#E82176</color>
+  <color name="km_toolbar_icon_color">#E82176</color>
+</resources>

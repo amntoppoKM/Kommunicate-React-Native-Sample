@@ -1,0 +1,102 @@
+{
+  "sentMessageBackgroundColor": "#F7DFE8", //Available in Android and iOS
+    "receivedMessageBackgroundColor": "#E8E1EF", //Available in Android and iOS
+    "chatBackgroundColorOrDrawable": "#FCF4F9", //Available in Android and iOS
+    "sentMessageTextColor": "#231F20", //Available in Android and iOS
+    "receivedMessageTextColor": "#231F20", //Available in Android and iOS
+    "showStartNewConversation": true, //Available in Android and iOS
+    "maxAttachmentAllowed": 10, //Available in Android and iOS
+    "toolbarTitleColor": "#231F20", //Available in Android and iOS
+    "toolbarSubtitleColor": "#000000", //Available in Android and iOS
+    "toolbarColor": "#F3E0E8", //Available in Android and iOS
+    "restrictMessageTypingWithBots": false, //Available in Android and iOS
+    "enableFaqOption": [
+      true,
+      true
+    ], //Available in Android and iOS
+    "restrictedWordRegex": "", //Available in Android and iOS
+    "refreshOption": false, //Available in Android and iOS
+    "attachmentOptions": {
+      ":location": true,
+      ":camera": true,
+      ":file": true,
+      ":audio": true
+    }, //Available in Android and iOS
+    "oneTimeRating": true, //Available in Android and iOS
+    "rateConversationMenuOption" : true, //Available in Android and iOS
+    "restartConversationButtonVisibility": true, //Available in Android and iOS
+    
+    "customMessageBackgroundColor": "#E6E5EC", // Available in Android 
+    "sendButtonBackgroundColor": "#E82176", //Available in Android
+    "sentMessageCreatedAtTimeColor": "", //Available in Android
+    "receivedMessageCreatedAtTimeColor": "", //Available in Android
+    "attachmentIconsBackgroundColor": "#FF03A9F4", //Available in Android and iOS
+    "channelCustomMessageBgColor": "#CCCCCC", //Available in Android
+    "sentContactMessageTextColor:": "#5FBA7D", //Available in Android
+    "receivedContactMessageTextColor": "#646262", //Available in Android
+    "messageStatusIconColor": "#5C5AA7", //Available in Android
+    "messageEditTextTextColor": "#000000", //Available in Android
+    "sentMessageLinkTextColor": "#FFFFFFFF", //Available in Android
+    "receivedMessageLinkTextColor": "#5FBA7D", //Available in Android
+    "messageEditTextHintTextColor": "#BDBDBD", //Available in Android
+    "noConversationLabelTextColor": "#000000", //Available in Android
+    "conversationDateTextColor": "#333333", //Available in Android
+    "conversationDayTextColor": "#333333", //Available in Android
+    "messageTimeTextColor": "#EDE6E6", //Available in Android
+    "channelCustomMessageTextColor": "#666666",//Available in Android
+    "sentMessageBorderColor": "#F7DFE8", //Available in Android
+    "receivedMessageBorderColor": "#E6E5EC", //Available in Android
+    "channelCustomMessageBorderColor": "#CCCCCC", //Available in Android
+    "collapsingToolbarLayoutColor": "#5C5AA7", //Available in Android
+    "groupParticipantsTextColor": "#5C5AA7", //Available in Android
+    "groupDeleteButtonBackgroundColor": "#5C5AA7", //Available in Android
+    "groupExitButtonBackgroundColor": "#5C5AA7", //Available in Android
+    "adminTextColor": "#5C5AA7", //Available in Android
+    "attachCameraIconName": "applozic_ic_action_camera_new", //Available in Android
+    "adminBackgroundColor": "#FFFFFFFF", //Available in Android
+    "adminBorderColor": "#5C5AA7", //Available in Android
+    "userNotAbleToChatTextColor": "#000000", //Available in Android
+    "audioPermissionNotFoundMsg": "", //Available in Android
+    "startNewConversationButtonBackgroundColor":"#E82176", //Available in Android
+    "messageEditTextBackgroundColor":"#FFFFFF", //Available in Android
+    "autoSuggestionButtonBackgroundColor":"", //Available in Android
+    "autoSuggestionButtonTextColor":"", //Available in Android
+    "noConversationLabel": "You have no conversations", //Available in Android
+    "noSearchFoundForChatMessages": "No conversation found", //Available in Android
+    "totalRegisteredUserToFetch": 100, //Available in Android
+    "maxAttachmentSizeAllowed": 30, //Available in Android
+    "imageCompression": false, //Available in Android
+
+    "restrictedWordMessage": " Please don't use restricted word", //Available in Android
+    "logoutPackageName": "kommunicate.io.sample.MainActivity", ////Available in Android
+    "awayMessageTextColor": "#A9A4A4", //Available in Android
+    "sentMessageCornerRadii": [
+      10,
+      10,
+      10,
+      10
+    ], //Available in Android
+    "receivedMessageCornerRadii": [
+      10,
+      10,
+      10,
+      10
+    ], //Available in Android
+   
+    "editTextHintText": "", //Available in Android
+    "replyMessageLayoutSentMessageBackground": "#C0C0C0", //Available in Android
+    "replyMessageLayoutReceivedMessageBackground": "#F5F5F5", //Available in Android
+    "groupInfoScreenVisible": true, //Available in Android
+    "forwardOption": false, //Available in Android
+    "receiverNameTextColor": "#5C6677", //Available in Android
+    
+
+    "showTopbarStartConversationButton": "", // Available in iOS
+    "hideSenderName": false, // Available in iOS
+    "hideBackButtonInConversationList": true, // Available in iOS
+    "disableRichMessageButtonAction": false, //  Available in iOS
+    "isNewSystemPhotosUIEnabled": false, // Available in iOS
+    "enableBackArrowOnConversationListScreen": true, // Available in iOS
+    "deleteOption": true
+  }
+  
