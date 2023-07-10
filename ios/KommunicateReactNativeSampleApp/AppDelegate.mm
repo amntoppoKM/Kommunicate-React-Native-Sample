@@ -17,6 +17,7 @@
 #import <ReactCommon/RCTTurboModuleManager.h>
 
 #import <react/config/ReactNativeConfig.h>
+import Kommunicate
 
 static NSString *const kRNConcurrentRoot = @"concurrentRoot";
 
@@ -25,6 +26,7 @@ static NSString *const kRNConcurrentRoot = @"concurrentRoot";
   RCTSurfacePresenterBridgeAdapter *_bridgeAdapter;
   std::shared_ptr<const facebook::react::ReactNativeConfig> _reactNativeConfig;
   facebook::react::ContextContainer::Shared _contextContainer;
+  
 }
 @end
 #endif

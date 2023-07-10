@@ -31,18 +31,21 @@ PODS:
     - ReactCommon/turbomodule/core (= 0.69.4)
   - fmt (6.2.1)
   - glog (0.3.5)
-  - Kingfisher (7.0.0)
-  - Kommunicate (6.6.0):
-    - KommunicateChatUI-iOS-SDK (~> 0.2.0)
-  - KommunicateChatUI-iOS-SDK (0.2.5):
-    - KommunicateChatUI-iOS-SDK/Complete (= 0.2.5)
-  - KommunicateChatUI-iOS-SDK/Complete (0.2.5):
-    - Kingfisher (~> 7.0.0)
+  - iOSDropDown (0.4.0)
+  - Kingfisher (7.6.2)
+  - Kommunicate (6.9.3):
+    - KommunicateChatUI-iOS-SDK (~> 1.1.0)
+  - KommunicateChatUI-iOS-SDK (1.1.0):
+    - KommunicateChatUI-iOS-SDK/Complete (= 1.1.0)
+  - KommunicateChatUI-iOS-SDK/Complete (1.1.0):
+    - iOSDropDown
+    - Kingfisher (~> 7.6.2)
     - KommunicateChatUI-iOS-SDK/RichMessageKit
-    - KommunicateCore-iOS-SDK (~> 1.0.4)
+    - KommunicateCore-iOS-SDK (~> 1.1.0)
     - SwipeCellKit (~> 2.7.1)
-  - KommunicateChatUI-iOS-SDK/RichMessageKit (0.2.5)
-  - KommunicateCore-iOS-SDK (1.0.4)
+    - ZendeskChatProvidersSDK (~> 3.0.0)
+  - KommunicateChatUI-iOS-SDK/RichMessageKit (1.1.0)
+  - KommunicateCore-iOS-SDK (1.1.0)
   - RCT-Folly (2021.06.28.00-v2):
     - boost
     - DoubleConversion
@@ -237,6 +240,11 @@ PODS:
     - glog
     - RCT-Folly (= 2021.06.28.00-v2)
     - React-jsi/Default (= 0.69.4)
+  - React-jsi/Default (0.69.4):
+    - boost (= 1.76.0)
+    - DoubleConversion
+    - glog
+    - RCT-Folly (= 2021.06.28.00-v2)
   - React-jsiexecutor (0.69.4):
     - DoubleConversion
     - glog
@@ -319,14 +327,46 @@ PODS:
     - React-jsi (= 0.69.4)
     - React-logger (= 0.69.4)
     - React-perflogger (= 0.69.4)
-  - RNKommunicateChat (1.0.0):
-    - Kommunicate (~> 6.6.0)
+  - RNCMaskedView (0.1.11):
     - React
+  - RNGestureHandler (2.5.0):
+    - React-Core
+  - RNKommunicateChat (1.0.0):
+    - Kommunicate (~> 6.9.3)
+    - React
+  - RNReanimated (2.9.1):
+    - DoubleConversion
+    - FBLazyVector
+    - FBReactNativeSpec
+    - glog
+    - RCT-Folly
+    - RCTRequired
+    - RCTTypeSafety
+    - React-callinvoker
+    - React-Core
+    - React-Core/DevSupport
+    - React-Core/RCTWebSocket
+    - React-CoreModules
+    - React-cxxreact
+    - React-jsi
+    - React-jsiexecutor
+    - React-jsinspector
+    - React-RCTActionSheet
+    - React-RCTAnimation
+    - React-RCTBlob
+    - React-RCTImage
+    - React-RCTLinking
+    - React-RCTNetwork
+    - React-RCTSettings
+    - React-RCTText
+    - ReactCommon/turbomodule/core
+    - Yoga
   - RNScreens (3.15.0):
     - React-Core
     - React-RCTImage
   - SwipeCellKit (2.7.1)
   - Yoga (1.14.0)
+  - ZendeskChatProvidersSDK (3.0.0)
 
 DEPENDENCIES:
   - boost (from `../node_modules/react-native/third-party-podspecs/boost.podspec`)
@@ -371,18 +411,23 @@ DEPENDENCIES:
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - React-runtimeexecutor (from `../node_modules/react-native/ReactCommon/runtimeexecutor`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
+  - "RNCMaskedView (from `../node_modules/@react-native-community/masked-view`)"
+  - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
   - RNKommunicateChat (from `../node_modules/react-native-kommunicate-chat`)
+  - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
   trunk:
     - fmt
+    - iOSDropDown
     - Kingfisher
     - Kommunicate
     - KommunicateChatUI-iOS-SDK
     - KommunicateCore-iOS-SDK
     - SwipeCellKit
+    - ZendeskChatProvidersSDK
 
 EXTERNAL SOURCES:
   boost:
@@ -467,8 +512,14 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/runtimeexecutor"
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
+  RNCMaskedView:
+    :path: "../node_modules/@react-native-community/masked-view"
+  RNGestureHandler:
+    :path: "../node_modules/react-native-gesture-handler"
   RNKommunicateChat:
     :path: "../node_modules/react-native-kommunicate-chat"
+  RNReanimated:
+    :path: "../node_modules/react-native-reanimated"
   RNScreens:
     :path: "../node_modules/react-native-screens"
   Yoga:
@@ -490,10 +541,11 @@ SPEC CHECKSUMS:
   FBReactNativeSpec: cb0df4f0084281b394f76bb9b4d1d9540f35963f
   fmt: ff9d55029c625d3757ed641535fd4a75fedc7ce9
   glog: 3d02b25ca00c2d456734d0bcff864cbc62f6ae1a
-  Kingfisher: 5efc54fec3980f92354898532e562cc17f31efb4
-  Kommunicate: b6a93db6b3e46e3a13a443e24cbacfa30eed91e8
-  KommunicateChatUI-iOS-SDK: 2507026e4630067caea09a1d36404a3fa3c146b7
-  KommunicateCore-iOS-SDK: f4cbf5ee3a11f869d7effaff4270823bb1336991
+  iOSDropDown: ce9daa584eaa5567cafc1b633e3cc7eb6d9cea42
+  Kingfisher: 6c5449c6450c5239166510ba04afe374a98afc4f
+  Kommunicate: 745675ffe5dc598deaeab2ee7d55d68ec6c8bf0c
+  KommunicateChatUI-iOS-SDK: e35e6ef8c0e90429db12c361f0d7b6730f2641a6
+  KommunicateCore-iOS-SDK: f97b5e49e4ead1725723b62ee98de47a7b3a142e
   RCT-Folly: b9d9fe1fc70114b751c076104e52f3b1b5e5a95a
   RCTRequired: bd9d2ab0fda10171fcbcf9ba61a7df4dc15a28f4
   RCTTypeSafety: e44e139bf6ec8042db396201834fc2372f6a21cd
@@ -521,11 +573,15 @@ SPEC CHECKSUMS:
   React-RCTVibration: 9adb4a3cbb598d1bbd46a05256f445e4b8c70603
   React-runtimeexecutor: 61ee22a8cdf8b6bb2a7fb7b4ba2cc763e5285196
   ReactCommon: 8f67bd7e0a6afade0f20718f859dc8c2275f2e83
-  RNKommunicateChat: 22036a348dd99995f9af9ae224733bf900ffd895
+  RNCMaskedView: 0e1bc4bfa8365eba5fbbb71e07fbdc0555249489
+  RNGestureHandler: bad495418bcbd3ab47017a38d93d290ebd406f50
+  RNKommunicateChat: 5cc8f2edea28e4cac44c1b56711551ab1bc032a9
+  RNReanimated: 2cf7451318bb9cc430abeec8d67693f9cf4e039c
   RNScreens: 4a1af06327774490d97342c00aee0c2bafb497b7
   SwipeCellKit: 3972254a826da74609926daf59b08d6c72e619ea
   Yoga: ff994563b2fd98c982ca58e8cd9db2cdaf4dda74
+  ZendeskChatProvidersSDK: af93e02e2058875f92e6ad86e74ee51203b4079e
 
-PODFILE CHECKSUM: abe304fddd07edbed0f55cb99a59a93f49a90246
+PODFILE CHECKSUM: 50dfd2589a482d32ed757e9e97df96c9e57baf6d
 
 COCOAPODS: 1.11.3
