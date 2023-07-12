@@ -1,7 +1,7 @@
 {
   "sentMessageBackgroundColor": "#F7DFE8", //Available in Android and iOS
     "receivedMessageBackgroundColor": "#E8E1EF", //Available in Android and iOS
-    "chatBackgroundColorOrDrawable": "#FCF4F9", //Available in Android and iOS
+    "chatBackgroundColorOrDrawable": "FCF4F9", //Available in Android and iOS
     "sentMessageTextColor": "#231F20", //Available in Android and iOS
     "receivedMessageTextColor": "#231F20", //Available in Android and iOS
     "showStartNewConversation": true, //Available in Android and iOS
@@ -24,13 +24,13 @@
     }, //Available in Android and iOS
     "oneTimeRating": true, //Available in Android and iOS
     "rateConversationMenuOption" : true, //Available in Android and iOS
-    "restartConversationButtonVisibility": true, //Available in Android and iOS
+    "restartConversationButtonVisibility": true, //Available in FAndroid and iOS
     
     "customMessageBackgroundColor": "#E6E5EC", // Available in Android 
     "sendButtonBackgroundColor": "#E82176", //Available in Android
     "sentMessageCreatedAtTimeColor": "", //Available in Android
     "receivedMessageCreatedAtTimeColor": "", //Available in Android
-    "attachmentIconsBackgroundColor": "#FF03A9F4", //Available in Android and iOS
+    "attachmentIconsBackgroundColor": "#FCF4F9", //Available in Android and iOS
     "channelCustomMessageBgColor": "#CCCCCC", //Available in Android
     "sentContactMessageTextColor:": "#5FBA7D", //Available in Android
     "receivedContactMessageTextColor": "#646262", //Available in Android
@@ -58,7 +58,7 @@
     "userNotAbleToChatTextColor": "#000000", //Available in Android
     "audioPermissionNotFoundMsg": "", //Available in Android
     "startNewConversationButtonBackgroundColor":"#E82176", //Available in Android
-    "messageEditTextBackgroundColor":"#FFFFFF", //Available in Android
+    "messageEditTextBackgroundColor":"#000000", //Available in Android
     "autoSuggestionButtonBackgroundColor":"", //Available in Android
     "autoSuggestionButtonTextColor":"", //Available in Android
     "noConversationLabel": "You have no conversations", //Available in Android
